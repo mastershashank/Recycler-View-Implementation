@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         FoodAdapter adapter = new FoodAdapter(foods , this);
         recyclerView.setAdapter(adapter);
 
-        // LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2);
-        recyclerView.setLayoutManager(gridLayoutManager);
+         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+       // GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2);
+        recyclerView.setLayoutManager(layoutManager);
     }
 }
